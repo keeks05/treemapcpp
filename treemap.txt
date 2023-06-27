@@ -1,0 +1,50 @@
+Complete full implementation of a treemap
+ Complete functions for treemap - most will be the same except
+   Each node will contain both a key and a value
+      int key;
+      T value;
+      Should they still have a right and left ptr
+    1. FloorKey() - left side of key
+    2. CeilKey() - right side of key
+  
+  (size_t function) (no params) - returns the size of the tree or the number of nodes in the tree
+    return class member that will contain the size of the tree
+   
+  (bool function) (no params) - check if the treemap is empty
+   return true if size is 0 else false 
+
+   (void function) (K key, V value) - Inserts key in map with value
+   Need to check if the key already exists
+      Throw exception
+
+   (void function) (K key) - need to remove key from map
+   Need to check if key exist
+      Throw exception if it doesnt exist
+
+   (ref to V function) (K key) - get the value at the key
+     Check if the tree is empty || key doenst exist
+   
+   (ref to K function) (K key) - FLoor get the greatest key that is smaller or equal to K key
+      Throw exception if it doesnt exit or tree is empty
+      TODO
+
+   (ref to K function) (K key) - FLoor get the greatest key that is smaller or equal to K key
+      Throw exception if it doesnt exit or tree is empty
+      TODO
+
+   (bool function) (K key) - reture true if key is found in the map
+      TODO
+
+   (bool function) (V value) - return true if value is found in the map
+
+   (K key function) (no params) - return the max key
+      Throw exception if key is empty
+      TODO
+
+   (K key function) (no params) - return the min key
+      Throw exception if key is empty
+      TODO
+
+Need to create the data members of a treemap
+   Create node to hold the key and the value
+   Create size_t to hold the size of the treemap
